@@ -11,7 +11,8 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "webpack --mode=production",
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "lint": "eslint --ext ts --format=pretty src"
+    "lint": "eslint --ext ts --format=pretty src",
+    "now-build": "npm run build"
   },
   "repository": {
     "type": "git",
