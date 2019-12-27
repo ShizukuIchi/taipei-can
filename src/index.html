@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body,
+      #map {
+        height: 100%;
+        width: 100vw;
+      }
+      .leaflet-popup {
+        user-select: none !important;
+      }
+      .leaflet-control-geosearch form {
+        max-width: 324px;
+      }
+      .location {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .location:hover {
+        background-color: #f4f4f4;
+      }
+      .location__icon {
+        width: 22px;
+        height: 22px;
+      }
+    </style>
+    <title>Laji</title>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
